@@ -5,7 +5,7 @@ services:
       image: postgres
       container_name: postgres
       volumes:
-        - postgres_data:/var/lib/postgresql/data
+        - /postgres_data:/var/lib/postgresql/data
       environment:
         POSTGRES_DB: keycloak
         POSTGRES_USER: ${PSQL_USR}
